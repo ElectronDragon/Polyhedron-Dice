@@ -24,14 +24,14 @@
 
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="50dp"
+			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/twentySidedDiceNumber"
 			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="50dp"
+			android:layout_width="60dp"
 			android:text="d20"
 			android:id="@+id/twentySidedDice"
 			android:layout_weight="10"/>
@@ -40,81 +40,188 @@
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:orientation="horizontal"
 		android:layout_margin="5dp">
 
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="test"
+			android:id="@+id/fourSidedDiceRoll"
+			android:gravity="center"
+			android:layout_weight="80"/>
+
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"/>
+			android:layout_width="40dp"
+			android:text="1"
+			android:id="@+id/fourSidedDiceNumber"
+			android:layout_weight="10"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:text="d4"
+			android:id="@+id/fourSidedDice"
+			android:layout_weight="10"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:orientation="horizontal"
 		android:layout_margin="5dp">
 
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="test"
+			android:id="@+id/sixSidedDiceRoll"
+			android:gravity="center"
+			android:layout_weight="80"/>
+
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"/>
+			android:layout_width="40dp"
+			android:text="1"
+			android:id="@+id/sixSidedDiceNumber"
+			android:layout_weight="10"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:text="d6"
+			android:id="@+id/sixSidedDice"
+			android:layout_weight="10"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:orientation="horizontal"
 		android:layout_margin="5dp">
 
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="test"
+			android:id="@+id/eightSidedDiceRoll"
+			android:gravity="center"
+			android:layout_weight="80"/>
+
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"/>
+			android:layout_width="40dp"
+			android:text="1"
+			android:id="@+id/eightSidedDiceNumber"
+			android:layout_weight="10"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:text="d8"
+			android:id="@+id/eightSidedDice"
+			android:layout_weight="10"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
 		android:layout_margin="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="test"
+			android:id="@+id/tenSidedDiceRoll"
+			android:gravity="center"
+			android:layout_weight="80"/>
 
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"/>
+			android:layout_width="40dp"
+			android:text="1"
+			android:id="@+id/tenSidedDiceNumber"
+			android:layout_weight="10"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:text="d10"
+			android:id="@+id/tenSidedDice"
+			android:layout_weight="10"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:orientation="horizontal"
 		android:layout_margin="5dp">
 
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="test"
+			android:id="@+id/twelveSidedDiceRoll"
+			android:gravity="center"
+			android:layout_weight="80"/>
+
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"/>
+			android:layout_width="40dp"
+			android:text="1"
+			android:id="@+id/twelveSidedDiceNumber"
+			android:layout_weight="10"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:text="d12"
+			android:id="@+id/twelveSidedDice"
+			android:layout_weight="10"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:orientation="horizontal"
 		android:layout_margin="5dp">
 
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="test"
+			android:id="@+id/hundredSidedDiceRoll"
+			android:gravity="center"
+			android:layout_weight="80"/>
+
 		<Button
 			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Button"/>
+			android:layout_width="40dp"
+			android:text="1"
+			android:id="@+id/hundredSidedDiceNumber"
+			android:layout_weight="10"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:text="d100"
+			android:id="@+id/hundredSidedDice"
+			android:layout_weight="10"/>
 
 	</LinearLayout>
 
 </LinearLayout>
-
