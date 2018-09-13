@@ -8,17 +8,9 @@ import android.view.View.*;
 import android.view.*;
 import android.text.*;
 
-/* This app is a work in progress.
-
- The idea is to create a menu of buttons that, when pressed, return a random number within a given range.
- These ranges correlate to the polyhedron dice used in Dungeons & Dragons.
-
- To do:
-
- Add default background & theme
- Add menu with other backgrounds and exit function
-
- */
+/* The idea behind this app is to create a menu of buttons that, 
+when pressed, return a random number within a given range.
+These ranges correlate to the polyhedron dice used in Dungeons & Dragons. */
 
 public class MainActivity extends Activity 
 {
@@ -28,7 +20,7 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-		//Button IDs for the interface
+		// Button IDs for the interface
 		Button twentySidedDice = (Button) findViewById(R.id.twentySidedDice);
 		Button fourSidedDice = (Button) findViewById(R.id.fourSidedDice);
 		Button sixSidedDice = (Button) findViewById(R.id.sixSidedDice);
@@ -36,8 +28,9 @@ public class MainActivity extends Activity
 		Button tenSidedDice = (Button) findViewById(R.id.tenSidedDice);
 		Button twelveSidedDice = (Button) findViewById(R.id.twelveSidedDice);
 		Button hundredSidedDice = (Button) findViewById(R.id.hundredSidedDice);
+		Button resetExit = (Button) findViewById(R.id.resetExit);
 
-		//Button IDs for the number of dice
+		// Button IDs for the number of dice
 		final Button twentySidedDiceNumber = (Button) findViewById(R.id.twentySidedDiceNumber);
 		final Button fourSidedDiceNumber = (Button) findViewById(R.id.fourSidedDiceNumber);
 		final Button sixSidedDiceNumber = (Button) findViewById(R.id.sixSidedDiceNumber);
@@ -46,7 +39,7 @@ public class MainActivity extends Activity
 		final Button twelveSidedDiceNumber = (Button) findViewById(R.id.twelveSidedDiceNumber);
 		final Button hundredSidedDiceNumber = (Button) findViewById(R.id.hundredSidedDiceNumber);
 
-		//TextView IDs for the interface
+		// TextView IDs for the interface
 		final TextView twentySidedDiceRoll = (TextView) findViewById(R.id.twentySidedDiceRoll);
 		final TextView fourSidedDiceRoll = (TextView) findViewById(R.id.fourSidedDiceRoll);
 		final TextView sixSidedDiceRoll = (TextView) findViewById(R.id.sixSidedDiceRoll);
@@ -55,7 +48,7 @@ public class MainActivity extends Activity
 		final TextView twelveSidedDiceRoll = (TextView) findViewById(R.id.twelveSidedDiceRoll);
 		final TextView hundredSidedDiceRoll = (TextView) findViewById(R.id.hundredSidedDiceRoll);
 
-		//Settings for the different dice; note coding in java rather than xml to accomodate lower API platforms
+		// Settings for the different dice; note coding in java rather than xml to accomodate lower API platforms
 
 		// D20 settings
 		twentySidedDice.setOnClickListener(new OnClickListener() 
@@ -343,6 +336,46 @@ public class MainActivity extends Activity
 					hundredSidedDiceNumber.setText(result);
 				}
 			});
+			
+		// Exit button settings
+		resetExit.setOnClickListener(new OnClickListener() 
+			{
+				@Override
+				public void onClick(View v)
+				{
+					twentySidedDiceRoll.setText("");
+					fourSidedDiceRoll.setText("");
+					sixSidedDiceRoll.setText("");
+					eightSidedDiceRoll.setText("");
+					tenSidedDiceRoll.setText("");
+					twelveSidedDiceRoll.setText("");
+					hundredSidedDiceRoll.setText("");
+					numberTwentySidedDice = 1;
+					numberFourSidedDice = 1;
+					numberSixSidedDice = 1;
+					numberEightSidedDice = 1;
+					numberTenSidedDice = 1;
+					numberTwelveSidedDice = 1;
+					numberHundredSidedDice = 1;
+					twentySidedDiceNumber.setText("1");
+					fourSidedDiceNumber.setText("1");
+					sixSidedDiceNumber.setText("1");
+					eightSidedDiceNumber.setText("1");
+					tenSidedDiceNumber.setText("1");
+					twelveSidedDiceNumber.setText("1");
+					hundredSidedDiceNumber.setText("1");					
+				}
+			});
+		
+		resetExit.setOnLongClickListener(new OnLongClickListener() 
+			{
+				@Override
+				public boolean onLongClick(View v)
+				{
+					finish();
+					return true;
+				}
+			});
 	}
 
 	/* Legacy code for rolling a single dice
@@ -372,6 +405,5 @@ public class MainActivity extends Activity
 	int numberTenSidedDice = 1;
 	int numberTwelveSidedDice = 1;
 	int numberHundredSidedDice = 1;
-
 
 }
