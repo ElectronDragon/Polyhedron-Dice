@@ -245,5 +245,31 @@
 			style="@style/BlueButton"/>
 
 	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_margin="5dp">
+
+		<TextView
+			android:layout_width="120dp"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text=""
+			android:id="@+id/noText"
+			android:gravity="center"
+			android:layout_weight="75"
+			style="@style/BlueText"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="100dp"
+			android:text="Exit"
+			android:id="@+id/resetExit"
+			android:layout_weight="25"
+			style="@style/BlueButton"/>
+		
+	</LinearLayout>
 
 </LinearLayout>
