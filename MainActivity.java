@@ -2,11 +2,11 @@ package com.electricdragon.polyhedrondice;
 
 import android.app.*;
 import android.os.*;
-import java.util.*;
-import android.widget.*;
-import android.view.View.*;
-import android.view.*;
 import android.text.*;
+import android.view.*;
+import android.view.View.*;
+import android.widget.*;
+import java.util.*;
 
 /* The idea behind this app is to create a menu of buttons that, 
 when pressed, return a random number within a given range.
@@ -14,6 +14,28 @@ These ranges correlate to the polyhedron dice used in Dungeons & Dragons. */
 
 public class MainActivity extends Activity 
 {
+	// Menu creation & functions
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.mainMenuExit:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+	
+	// Layout creation & functions
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -28,7 +50,7 @@ public class MainActivity extends Activity
 		Button tenSidedDice = (Button) findViewById(R.id.tenSidedDice);
 		Button twelveSidedDice = (Button) findViewById(R.id.twelveSidedDice);
 		Button hundredSidedDice = (Button) findViewById(R.id.hundredSidedDice);
-		Button resetExit = (Button) findViewById(R.id.resetExit);
+		Button resetAll = (Button) findViewById(R.id.resetAll);
 
 		// Button IDs for the number of dice
 		final Button twentySidedDiceNumber = (Button) findViewById(R.id.twentySidedDiceNumber);
@@ -337,8 +359,8 @@ public class MainActivity extends Activity
 				}
 			});
 			
-		// Exit button settings
-		resetExit.setOnClickListener(new OnClickListener() 
+		// Reset button settings
+		resetAll.setOnClickListener(new OnClickListener() 
 			{
 				@Override
 				public void onClick(View v)
@@ -367,16 +389,18 @@ public class MainActivity extends Activity
 				}
 			});
 		
-		resetExit.setOnLongClickListener(new OnLongClickListener() 
+		resetAll.setOnLongClickListener(new OnLongClickListener() 
 			{
 				@Override
 				public boolean onLongClick(View v)
 				{
 					finish();
 					return true;
-				}
+				} 
 			});
-	}
+		}
+	
+	
 
 	/* Legacy code for rolling a single dice
 	 public static int rollDice(int sides) 
