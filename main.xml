@@ -5,8 +5,7 @@
 	android:layout_height="match_parent"
 	android:gravity="center"
 	android:orientation="vertical"
-	android:padding="5dp"
-	style="@style/BlueText">
+	android:padding="5dp">
 
 	<LinearLayout
 		android:layout_height="wrap_content"
@@ -21,24 +20,21 @@
 			android:text=""
 			android:id="@+id/twentySidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/twentySidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d20"
 			android:id="@+id/twentySidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 
@@ -55,24 +51,21 @@
 			android:text=""
 			android:id="@+id/fourSidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/fourSidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d4"
 			android:id="@+id/fourSidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 
@@ -89,24 +82,21 @@
 			android:text=""
 			android:id="@+id/sixSidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/sixSidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d6"
 			android:id="@+id/sixSidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 
@@ -123,24 +113,21 @@
 			android:text=""
 			android:id="@+id/eightSidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/eightSidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d8"
 			android:id="@+id/eightSidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 
@@ -157,24 +144,21 @@
 			android:text=""
 			android:id="@+id/tenSidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/tenSidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d10"
 			android:id="@+id/tenSidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 
@@ -191,24 +175,21 @@
 			android:text=""
 			android:id="@+id/twelveSidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/twelveSidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d12"
 			android:id="@+id/twelveSidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 
@@ -225,24 +206,21 @@
 			android:text=""
 			android:id="@+id/hundredSidedDiceRoll"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="40dp"
 			android:text="1"
 			android:id="@+id/hundredSidedDiceNumber"
-			android:layout_weight="10"
-			style="@style/BlueButton"/>
+			android:layout_weight="10"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="60dp"
 			android:text="d100"
 			android:id="@+id/hundredSidedDice"
-			android:layout_weight="15"
-			style="@style/BlueButton"/>
+			android:layout_weight="15"/>
 
 	</LinearLayout>
 	
@@ -259,16 +237,14 @@
 			android:text=""
 			android:id="@+id/noText"
 			android:gravity="center"
-			android:layout_weight="75"
-			style="@style/BlueText"/>
+			android:layout_weight="75"/>
 
 		<Button
 			android:layout_height="wrap_content"
 			android:layout_width="100dp"
-			android:text="Exit"
-			android:id="@+id/resetExit"
-			android:layout_weight="25"
-			style="@style/BlueButton"/>
+			android:text="Reset All"
+			android:id="@+id/resetAll"
+			android:layout_weight="25"/>
 		
 	</LinearLayout>
 
